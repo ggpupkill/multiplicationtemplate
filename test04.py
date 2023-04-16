@@ -6,7 +6,7 @@ def showoutput():
     number = int(text_input.get())
 
     if number == 0:
-        output_lebel.configure(text= 'คิดเองบ้างสิ ')
+        output_lebel.configure(text= 'คิดเองบ้างนะครับ ')
         return
 
     output = ''
@@ -19,6 +19,7 @@ def showoutput():
 window = tk.Tk()
 window.title("Hello world")
 window.minsize(width=120,height=400)
+
 
 title_label = tk.Label(master=window,text="สูตรคูณแม่ \n",)
 title_label.pack(side=tk.TOP,fill= tk.BOTH)
@@ -38,5 +39,6 @@ ok_button.pack()
 output_lebel = tk.Label(master=window)
 output_lebel.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
 
+#help me
 #fist project
 window.mainloop()
